@@ -48,6 +48,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.POLYGON]: '0x9e5A52f57b3038F1B8EeE45F28b3C1967e22799C',
   [ChainId.CELO]: '0x79a530c8e2fA8748B7B40dd3629C0520c2cCf03f',
   [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070',
+  [ChainId.JOC_TESTNET]: '0x43bFE3948b41B045261E5A697bbfad00d8328130',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -63,6 +64,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BNB]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
   [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1',
   [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035',
+  [ChainId.JOC_TESTNET]: '0x1b84c21f79430d14B8c83f65a4F79E77fce6804E',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -246,6 +248,15 @@ const ZKSYNC_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x99c56385daBCE3E81d8499d0b8d0257aBC07E8A3',
 }
 
+const JOC_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x209A90fb11804326be06FdD9ffDA8992DB6d99cB',
+  multicallAddress: '0x3A96f3294e60Ef0241BA1d1CD8813dc5B02492eE',
+  quoterAddress: '0xE662AD9B761174Bd929f192d3DD204D4c53C9AD5',
+  v3MigratorAddress: '0x35e86F8D9C5719593c5d695bFaEfE158EAAA652d',
+  nonfungiblePositionManagerAddress: '0x83090dd02E552b00De0786321E4fa0f04CCcbbbC',
+  tickLensAddress: '0xB313A0C7e7bfe507734d4e1381C3bc4Ff3BFE37a',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -269,6 +280,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
   [ChainId.BLAST]: BLAST_ADDRESSES,
   [ChainId.ZKSYNC]: ZKSYNC_ADDRESSES,
+  [ChainId.JOC_TESTNET]: JOC_TESTNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
